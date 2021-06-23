@@ -1,0 +1,106 @@
+.filter-menu {
+  display: flex;
+  justify-content: center;
+  &__item:not(:last-child) {
+    margin-right: 8px;
+  }
+  .filter-menu__btn {
+    margin-bottom: 50px;
+  }
+}
+
+.filter-btn {
+  font-family: var(--main-font);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+  letter-spacing: 0.03em;
+  background: var(--seventh-color);
+  border-radius: 4px;
+  border: none;
+  padding: 6px 22px;
+  transition-property: background-color, color, box-shadow;
+  transition-duration: var(--dur);
+  transition-timing-function: var(--tim-fun);
+  &:hover,
+  &:focus {
+    color: var(--fourth-color);
+    background-color: var(--accent-color);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+.project-name {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  margin-bottom: 4px;
+  color: var(--third-color);
+}
+.project-type {
+  font-family: var(--main-font);
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color);
+}
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
+}
+.projects-img-list-item {
+  flex-basis: calc((100% - 90px) / 3);
+  margin-left: 30px;
+  margin-top: 30px;
+  background: var(--fourth-color);
+}
+.projects-list-link-wrapper {
+  display: block;
+  transition-property: box-shadow;
+  transition-duration: var(--dur);
+  transition-timing-function: var(--tim-fun);
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.card-content {
+  padding: 20px 24px;
+  border: 1px solid var(--ninth-color);
+}
+.projects-list-img-wrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.overlay {
+  position: absolute;
+  background: rgba(33, 150, 243, 0.9);
+  font-size: 18px;
+  line-height: 1.56;
+  letter-spacing: 0.03em;
+  color: var(--fourth-color);
+  padding: 63px 24px;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  overflow: auto;
+  transform: translateY(100%);
+  transition-property: transform;
+  transition-duration: var(--dur);
+  transition-timing-function: var(--tim-fun);
+  .projects-list-link-wrapper:hover &,
+  .projects-list-link-wrapper:focus & {
+    transform: translateY(0%);
+  }
+}

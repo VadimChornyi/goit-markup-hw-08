@@ -1,0 +1,121 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-container {
+  width: 231px;
+  margin-right: 70px;
+}
+.footer-mooter {
+  display: flex;
+  align-items: baseline;
+}
+.footer .logo {
+  margin-bottom: 20px;
+  display: block;
+}
+.address-map {
+  transition-property: color;
+  transition-duration: var(--dur);
+  transition-timing-function: var(--tim-fun);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.address-map {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--fourth-color);
+}
+.address-footer {
+  font-style: normal;
+  &-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.social-title {
+  font-family: var(--main-font);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+}
+.social-container {
+  width: 206px;
+  height: 80px;
+}
+.social-list__link {
+  background: rgba(255, 255, 255, 0.1);
+}
+.social-list__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.social-title {
+  margin-bottom: 20px;
+}
+.footer .social-list__icon {
+  fill: var(--fourth-color);
+}
+.mailing-form {
+  width: 570px;
+  height: 86px;
+  margin-left: 93px;
+}
+.mailing {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.mailing-title {
+  font-family: var(--main-font);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--fourth-color);
+}
+.mailing-form-input {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  background: none;
+  width: 358px;
+  height: 50px;
+  padding: 16px 0 16px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+.mailing-form-btn {
+  width: 200px;
+  height: 50px;
+  background: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+  color: var(--fourth-color);
+}
+
+.mailing-icon {
+  margin-left: 10px;
+}
