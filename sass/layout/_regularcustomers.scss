@@ -1,3 +1,11 @@
+@media screen and (max-width: 1200px) {
+  .title {
+    font-size: 28px;
+    line-height: 1.18;
+    margin-bottom: 30px;
+  }
+}
+
 .customers-list__icon {
   width: 106px;
   height: 60px;
@@ -10,15 +18,12 @@
     fill: var(--accent-color);
   }
 }
-.customers-list {
-  display: flex;
-  justify-content: space-between;
-}
+
 .customers-list__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid var(--sixth-color);
   box-sizing: border-box;
@@ -31,3 +36,69 @@
     border-color: var(--accent-color);
   }
 }
+@media screen and (max-width: 767px) {
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .customers-list__item {
+    width: calc((100% - 60px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .customers-list__link {
+    width: 226px;
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+  }
+  .customers-list__item {
+    width: calc((100% - 90px) / 3);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .customers-list__link {
+    width: 170px;
+  }
+  .customers-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+}
+
+// .customers-list__icon {
+//   width: 106px;
+//   height: 60px;
+//   fill: var(--sixth-color);
+//   transition-property: fill;
+//   transition-duration: var(--dur);
+//   transition-timing-function: var(--tim-fun);
+//   .customers-list__link:hover &,
+//   .customers-list__link:focus & {
+//     fill: var(--accent-color);
+//   }
+// }
+// .customers-list__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   width: 170px;
+//   height: 92px;
+//   border: 1px solid var(--sixth-color);
+//   box-sizing: border-box;
+//   border-radius: 4px;
+//   transition-property: border-color;
+//   transition-duration: var(--dur);
+//   transition-timing-function: var(--tim-fun);
+//   &:hover,
+//   &:focus {
+//     border-color: var(--accent-color);
+//   }
+// }

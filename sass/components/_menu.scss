@@ -1,12 +1,21 @@
-.menu {
-  display: flex;
-  align-items: center;
-}
-.menu__item {
-  &:not(:last-child) {
-    margin-right: 50px;
+@media screen and (max-width: 767px) {
+  .menu {
+    display: none;
   }
 }
+
+@media screen and (min-width: 768px) {
+  .menu {
+    display: flex;
+    align-items: center;
+  }
+  .menu__item {
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
+}
+
 .menu__link {
   color: var(--third-color);
   transition-property: color;

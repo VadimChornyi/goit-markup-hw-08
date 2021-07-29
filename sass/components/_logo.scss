@@ -1,18 +1,35 @@
+.logo_log {
+  color: var(--third-color);
+}
 .logo {
+  width: 134px;
+  height: 28px;
   font-family: Raleway;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   animation-duration: 1000ms;
 }
-.header__logo {
-  margin-right: 92px;
-}
-.logo_log {
-  color: var(--third-color);
-}
 .logo_footer {
   color: var(--fourth-color);
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    margin-right: 88px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+  .logo,
+  .footer_logo {
+    font-size: 26px;
+    line-height: 1.19;
+    width: 145px;
+    height: 31px;
+  }
 }

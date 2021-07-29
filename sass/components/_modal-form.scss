@@ -9,7 +9,7 @@
 .modal-form-head {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--third-color);
@@ -88,11 +88,11 @@
 
 .modal-form-checkbox-policy {
   font-weight: normal;
-  font-size: 14px;
-  line-height: 1.71;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: var(--secondary-color);
-  margin-left: 14px;
+  margin-left: 0px;
   margin-top: 10px;
   &::before {
     display: inline-block;
@@ -140,4 +140,14 @@
 
 .modal-form-policy-link {
   color: var(--accent-color);
+}
+
+@media screen and (min-width: 1200px) {
+  .modal-form-head {
+    line-height: 1.15;
+  }
+
+  .modal-form-checkbox-policy {
+    margin-left: 14px;
+  }
 }
