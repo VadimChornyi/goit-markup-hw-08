@@ -78,6 +78,11 @@
     transform: translateY(0%);
   }
 }
+@media screen and (min-width: 320px) and (max-width: 479px) {
+  .projects-img-list-img {
+    max-width: 100%;
+  }
+}
 
 @media screen and (max-width: 767px) {
   .header_mobile-menu-btn {
